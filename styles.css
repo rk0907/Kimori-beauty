@@ -75,9 +75,107 @@ nav.scrolled { box-shadow: 0 4px 30px rgba(44, 34, 27, 0.06); }
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 1.8rem;
   list-style: none;
   align-items: center;
+}
+
+.nav-links > li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--soft-brown);
+  font-size: 0.86rem;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.nav-links a:hover,
+.nav-links a.active { color: var(--terracotta); }
+
+/* Dropdown */
+.dropdown-toggle {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 0.86rem;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--soft-brown);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0;
+  transition: color 0.3s;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle.active {
+  color: var(--terracotta);
+}
+
+.dropdown-toggle svg {
+  width: 14px;
+  height: 14px;
+  transition: transform 0.25s ease;
+}
+
+.dropdown.open .dropdown-toggle svg {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  min-width: 200px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 12px 40px rgba(44, 34, 27, 0.12);
+  border: 1px solid rgba(44, 34, 27, 0.06);
+  padding: 0.5rem 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: all 0.25s ease;
+  z-index: 100;
+}
+
+.dropdown.open .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu a {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.7rem 1.3rem;
+  font-size: 0.88rem;
+  letter-spacing: 0.4px;
+  text-transform: none;
+  color: var(--soft-brown);
+  transition: background 0.2s, color 0.2s;
+}
+
+.dropdown-menu a:hover {
+  background: var(--cream);
+  color: var(--terracotta);
+}
+
+.dropdown-menu a svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  color: var(--terracotta);
 }
 
 .nav-links a {
