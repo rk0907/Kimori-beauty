@@ -3,731 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kimori Beauty | Natural Gray Hair Restoration with Henna & Indigo | Tema, Ghana</title>
-  <meta name="description" content="Kimori Beauty – Restore your natural dark hair with pure Henna and Indigo. 100% natural, chemical-free gray coverage. Based in Tema, Ghana.">
+  <title>Kimori Beauty | Natural Hair Care | Tema, Ghana</title>
+  <meta name="description" content="Kimori Beauty – Ghanaian natural hair care. Herbal growth oil, hair butter, black soap shampoo, and Henna & Indigo gray coverage kit. Grow it. Show it. Own it.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --cream: #f8f4ef;
-      --warm-white: #fdfbf8;
-      --deep-brown: #2c221b;
-      --soft-brown: #5c4a3a;
-      --terracotta: #a66a4e;
-      --sage: #7d8c6e;
-      --gold: #c9a86c;
-      --text: #3a2f27;
-    }
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background: var(--warm-white);
-      color: var(--text);
-      line-height: 1.7;
-      overflow-x: hidden;
-    }
-
-    h1, h2, h3, h4 {
-      font-family: 'Cormorant Garamond', serif;
-      font-weight: 500;
-      line-height: 1.2;
-    }
-
-    /* Icons */
-    .icon {
-      width: 24px;
-      height: 24px;
-      stroke: currentColor;
-      stroke-width: 1.5;
-      fill: none;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .icon-lg {
-      width: 28px;
-      height: 28px;
-    }
-
-    .icon-xl {
-      width: 32px;
-      height: 32px;
-    }
-
-    /* Navigation */
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
-      background: rgba(253, 251, 248, 0.94);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(44, 34, 27, 0.06);
-      transition: all 0.3s ease;
-    }
-
-    nav.scrolled { box-shadow: 0 4px 30px rgba(44, 34, 27, 0.06); }
-
-    .nav-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 1.1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.75rem;
-      font-weight: 600;
-      color: var(--deep-brown);
-      text-decoration: none;
-      letter-spacing: 0.5px;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    .logo span { color: var(--terracotta); }
-
-    .nav-links {
-      display: flex;
-      gap: 2.5rem;
-      list-style: none;
-      align-items: center;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: var(--soft-brown);
-      font-size: 0.88rem;
-      font-weight: 400;
-      letter-spacing: 0.8px;
-      text-transform: uppercase;
-      transition: color 0.3s;
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-    }
-
-    .nav-links a:hover { color: var(--terracotta); }
-
-    .nav-cta {
-      background: var(--deep-brown);
-      color: white !important;
-      padding: 0.65rem 1.4rem;
-      border-radius: 2px;
-      font-size: 0.8rem !important;
-    }
-
-    .nav-cta:hover { background: var(--terracotta) !important; }
-
-    .mobile-toggle {
-      display: none;
-      background: none;
-      border: none;
-      cursor: pointer;
-      color: var(--deep-brown);
-      padding: 0.25rem;
-    }
-
-    /* Hero */
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      background: linear-gradient(135deg, #f8f4ef 0%, #f0e9e0 50%, #e8ede4 100%);
-      position: relative;
-      padding: 8rem 2rem 5rem;
-      overflow: hidden;
-    }
-
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: -20%;
-      right: -10%;
-      width: 600px;
-      height: 600px;
-      background: radial-gradient(circle, rgba(166, 106, 78, 0.08) 0%, transparent 70%);
-      border-radius: 50%;
-    }
-
-    .hero-content {
-      max-width: 1200px;
-      margin: 0 auto;
-      width: 100%;
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 4rem;
-      align-items: center;
-      position: relative;
-      z-index: 2;
-    }
-
-    .hero-text .eyebrow {
-      font-size: 0.8rem;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      color: var(--terracotta);
-      margin-bottom: 0.8rem;
-      font-weight: 500;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    .hero-text h1 {
-      font-size: clamp(2.8rem, 5.5vw, 4.1rem);
-      color: var(--deep-brown);
-      margin-bottom: 1.2rem;
-    }
-
-    .hero-text .subtitle {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.4rem;
-      color: var(--terracotta);
-      font-style: italic;
-      margin-bottom: 1.4rem;
-    }
-
-    .hero-text p {
-      font-size: 1.05rem;
-      color: var(--soft-brown);
-      max-width: 480px;
-      margin-bottom: 2.2rem;
-      font-weight: 300;
-    }
-
-    .hero-btns {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.95rem 1.8rem;
-      text-decoration: none;
-      font-size: 0.85rem;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      font-weight: 500;
-      transition: all 0.3s ease;
-      border-radius: 2px;
-    }
-
-    .btn-primary {
-      background: var(--deep-brown);
-      color: white;
-    }
-
-    .btn-primary:hover {
-      background: var(--terracotta);
-      transform: translateY(-2px);
-    }
-
-    .btn-secondary {
-      border: 1px solid var(--deep-brown);
-      color: var(--deep-brown);
-    }
-
-    .btn-secondary:hover {
-      background: var(--deep-brown);
-      color: white;
-    }
-
-    .hero-image { position: relative; }
-
-    .hero-image-inner {
-      aspect-ratio: 4/5;
-      background: linear-gradient(160deg, #d4c4b0, #b89b82);
-      border-radius: 4px;
-      overflow: hidden;
-      box-shadow: 0 30px 60px rgba(44, 34, 27, 0.12);
-    }
-
-    .hero-image-inner img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .hero-badge {
-      position: absolute;
-      bottom: -20px;
-      left: -20px;
-      background: white;
-      padding: 1.15rem 1.4rem;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
-      border-radius: 2px;
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
-
-    .hero-badge strong {
-      display: block;
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.25rem;
-      color: var(--deep-brown);
-    }
-
-    .hero-badge span {
-      font-size: 0.78rem;
-      color: var(--soft-brown);
-    }
-
-    /* Sections */
-    section { padding: 6rem 2rem; }
-
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .section-header {
-      text-align: center;
-      margin-bottom: 3.5rem;
-    }
-
-    .section-header .eyebrow {
-      font-size: 0.8rem;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      color: var(--terracotta);
-      margin-bottom: 0.8rem;
-      font-weight: 500;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.45rem;
-    }
-
-    .section-header h2 {
-      font-size: clamp(2.2rem, 4vw, 3rem);
-      color: var(--deep-brown);
-      margin-bottom: 1rem;
-    }
-
-    .section-header p {
-      max-width: 560px;
-      margin: 0 auto;
-      color: var(--soft-brown);
-      font-weight: 300;
-    }
-
-    /* Welcome */
-    .welcome { background: var(--cream); }
-
-    .welcome-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: center;
-    }
-
-    .welcome-text h2 {
-      font-size: 2.5rem;
-      color: var(--deep-brown);
-      margin-bottom: 1.5rem;
-    }
-
-    .welcome-text p {
-      margin-bottom: 1.2rem;
-      color: var(--soft-brown);
-      font-weight: 300;
-    }
-
-    .welcome-image {
-      aspect-ratio: 1;
-      background: linear-gradient(145deg, #c9b8a4, #a68b72);
-      border-radius: 4px;
-      overflow: hidden;
-    }
-
-    .welcome-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    /* Products */
-    .products { background: var(--warm-white); }
-
-    .products-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2rem;
-    }
-
-    .product-card {
-      background: white;
-      border-radius: 4px;
-      overflow: hidden;
-      transition: transform 0.35s ease, box-shadow 0.35s ease;
-      border: 1px solid rgba(44, 34, 27, 0.05);
-    }
-
-    .product-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 25px 50px rgba(44, 34, 27, 0.1);
-    }
-
-    .product-image {
-      aspect-ratio: 1;
-      background: linear-gradient(160deg, #e8ded2, #d4c4b0);
-      overflow: hidden;
-      position: relative;
-    }
-
-    .product-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .product-info { padding: 1.6rem; }
-
-    .product-info h3 {
-      font-size: 1.4rem;
-      color: var(--deep-brown);
-      margin-bottom: 0.5rem;
-    }
-
-    .product-info p {
-      font-size: 0.92rem;
-      color: var(--soft-brown);
-      margin-bottom: 1.2rem;
-      font-weight: 300;
-    }
-
-    .product-price {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.3rem;
-      color: var(--terracotta);
-      font-weight: 600;
-    }
-
-    /* Benefits */
-    .benefits {
-      background: var(--deep-brown);
-      color: white;
-    }
-
-    .benefits .section-header .eyebrow { color: var(--gold); }
-    .benefits .section-header h2 { color: white; }
-    .benefits .section-header p { color: rgba(255,255,255,0.7); }
-
-    .benefits-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 2rem;
-    }
-
-    .benefit-card {
-      text-align: center;
-      padding: 1.8rem 1.2rem;
-      border-radius: 4px;
-      transition: background 0.3s ease;
-    }
-
-    .benefit-card:hover {
-      background: rgba(255,255,255,0.04);
-    }
-
-    .benefit-icon {
-      width: 64px;
-      height: 64px;
-      background: rgba(201, 168, 108, 0.12);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 1.3rem;
-      color: var(--gold);
-    }
-
-    .benefit-card h3 {
-      font-size: 1.25rem;
-      margin-bottom: 0.6rem;
-      color: var(--gold);
-    }
-
-    .benefit-card p {
-      font-size: 0.9rem;
-      color: rgba(255,255,255,0.7);
-      font-weight: 300;
-    }
-
-    /* Process */
-    .process { background: var(--cream); }
-
-    .process-steps {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2.5rem;
-    }
-
-    .step { text-align: center; }
-
-    .step-icon {
-      width: 64px;
-      height: 64px;
-      background: white;
-      border: 1px solid rgba(166, 106, 78, 0.2);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 1.3rem;
-      color: var(--terracotta);
-      position: relative;
-    }
-
-    .step-number {
-      position: absolute;
-      top: -6px;
-      right: -6px;
-      width: 24px;
-      height: 24px;
-      background: var(--terracotta);
-      color: white;
-      border-radius: 50%;
-      font-size: 0.75rem;
-      font-weight: 600;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Inter', sans-serif;
-    }
-
-    .step h3 {
-      font-size: 1.35rem;
-      color: var(--deep-brown);
-      margin-bottom: 0.7rem;
-    }
-
-    .step p {
-      color: var(--soft-brown);
-      font-weight: 300;
-      font-size: 0.95rem;
-    }
-
-    /* Testimonials */
-    .testimonials { background: var(--warm-white); }
-
-    .testimonial-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2rem;
-    }
-
-    .testimonial-card {
-      background: white;
-      padding: 2rem;
-      border-radius: 4px;
-      border: 1px solid rgba(44, 34, 27, 0.06);
-    }
-
-    .stars {
-      color: var(--gold);
-      margin-bottom: 1rem;
-      display: flex;
-      gap: 3px;
-    }
-
-    .stars svg {
-      width: 16px;
-      height: 16px;
-      fill: var(--gold);
-    }
-
-    .testimonial-card p {
-      font-style: italic;
-      color: var(--soft-brown);
-      margin-bottom: 1.3rem;
-      font-weight: 300;
-      font-size: 0.95rem;
-    }
-
-    .testimonial-author {
-      font-weight: 500;
-      color: var(--deep-brown);
-      font-size: 0.9rem;
-    }
-
-    .testimonial-author span {
-      display: block;
-      font-weight: 300;
-      color: var(--soft-brown);
-      font-size: 0.8rem;
-      margin-top: 0.2rem;
-    }
-
-    /* Contact */
-    .contact {
-      background: linear-gradient(135deg, #f0e9e0, #e8ede4);
-      text-align: center;
-    }
-
-    .contact h2 {
-      font-size: 2.7rem;
-      color: var(--deep-brown);
-      margin-bottom: 1rem;
-    }
-
-    .contact p {
-      max-width: 520px;
-      margin: 0 auto 2rem;
-      color: var(--soft-brown);
-    }
-
-    .contact-btns {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-bottom: 3rem;
-    }
-
-    .contact-info {
-      display: flex;
-      justify-content: center;
-      gap: 3.5rem;
-      flex-wrap: wrap;
-    }
-
-    .contact-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.6rem;
-    }
-
-    .contact-item .icon-wrap {
-      width: 48px;
-      height: 48px;
-      background: white;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--terracotta);
-      box-shadow: 0 4px 15px rgba(44, 34, 27, 0.06);
-    }
-
-    .contact-item strong {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.15rem;
-      color: var(--deep-brown);
-    }
-
-    .contact-item span {
-      color: var(--soft-brown);
-      font-size: 0.9rem;
-    }
-
-    /* Footer */
-    footer {
-      background: var(--deep-brown);
-      color: rgba(255,255,255,0.7);
-      padding: 3.5rem 2rem 2rem;
-      text-align: center;
-    }
-
-    .footer-logo {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.8rem;
-      color: white;
-      margin-bottom: 0.8rem;
-    }
-
-    .footer-logo span { color: var(--gold); }
-
-    .footer-links {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin: 1.5rem 0;
-      flex-wrap: wrap;
-    }
-
-    .footer-links a {
-      color: rgba(255,255,255,0.6);
-      text-decoration: none;
-      font-size: 0.85rem;
-      transition: color 0.3s;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-    }
-
-    .footer-links a:hover { color: var(--gold); }
-
-    .footer-bottom {
-      margin-top: 2rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid rgba(255,255,255,0.1);
-      font-size: 0.8rem;
-    }
-
-    /* Responsive */
-    @media (max-width: 900px) {
-      .hero-content,
-      .welcome-grid {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
-      }
-
-      .hero {
-        padding-top: 7rem;
-        text-align: center;
-      }
-
-      .hero-text .eyebrow { justify-content: center; }
-      .hero-text p { margin-left: auto; margin-right: auto; }
-      .hero-btns { justify-content: center; }
-
-      .products-grid,
-      .benefits-grid,
-      .process-steps,
-      .testimonial-grid {
-        grid-template-columns: 1fr;
-        max-width: 400px;
-        margin: 0 auto;
-      }
-
-      .nav-links { display: none; }
-      .mobile-toggle { display: block; }
-
-      .contact-info { gap: 2rem; }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Navigation -->
   <nav id="navbar">
     <div class="nav-container">
-      <a href="#" class="logo">
+      <a href="index.html" class="logo">
         <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C8 6 4 9 4 14a8 8 0 0 0 16 0c0-5-4-8-8-12z"/><path d="M12 22v-6"/></svg>
         Kimori <span>Beauty</span>
       </a>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#benefits">Benefits</a></li>
-        <li><a href="#process">How It Works</a></li>
-        <li><a href="#contact" class="nav-cta">
-          <svg class="icon" style="width:16px;height:16px" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-          Order Now
-        </a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html" class="nav-cta">Order Now</a></li>
       </ul>
       <button class="mobile-toggle" aria-label="Menu">
         <svg class="icon" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -743,305 +39,148 @@
           <svg class="icon" style="width:16px;height:16px" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
           Tema, Ghana
         </div>
-        <h1>Restore Your Natural Dark Hair — Naturally</h1>
-        <div class="subtitle">100% Pure Henna & Indigo</div>
-        <p>Kimori Beauty helps you cover gray hair and bring back rich, healthy dark tones using only plant-based ingredients. No artificial dyes. No harsh chemicals. Just beautiful, natural results.</p>
+        <h1>Healthy Hair Starts Here</h1>
+        <div class="tagline">Grow it. Show it. Own it.</div>
+        <p>Kimori Beauty is a Ghanaian hair care brand dedicated to helping people make healthier hair decisions with quality, handcrafted ingredients.</p>
         <div class="hero-btns">
-          <a href="#products" class="btn btn-primary">
+          <a href="products.html" class="btn btn-primary">
             <svg class="icon" style="width:18px;height:18px" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
             Shop Products
           </a>
-          <a href="#process" class="btn btn-secondary">
-            <svg class="icon" style="width:18px;height:18px" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            See How It Works
+          <a href="https://wa.me/233355253706" class="btn btn-secondary" target="_blank">
+            <svg class="icon" style="width:18px;height:18px" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            WhatsApp Order
           </a>
         </div>
       </div>
       <div class="hero-image">
         <div class="hero-image-inner">
-          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80" alt="Beautiful natural dark hair">
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80" alt="Healthy natural hair">
         </div>
         <div class="hero-badge">
           <svg class="icon icon-lg" style="color:var(--terracotta)" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           <div>
-            <strong>100% Natural</strong>
-            <span>Henna + Indigo Only</span>
+            <strong>Natural Care</strong>
+            <span>Handcrafted in Ghana</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- About -->
-  <section class="welcome" id="about">
-    <div class="container">
-      <div class="welcome-grid">
-        <div class="welcome-image">
-          <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=700&q=80" alt="Natural henna and indigo">
-        </div>
-        <div class="welcome-text">
-          <h2>Nature’s Way to Beautiful Dark Hair</h2>
-          <p>At Kimori Beauty, we believe your hair deserves only the purest ingredients. Our carefully selected Henna and Indigo powders have been trusted for centuries to nourish hair while delivering deep, lasting colour.</p>
-          <p>No ammonia. No PPD. No synthetic dyes. Just plant-powered results that leave your hair stronger, shinier, and beautifully dark — the way nature intended.</p>
-          <p>Proudly based in Tema, Ghana, we bring authentic, high-quality natural hair care to women who want real results without compromise.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Products -->
-  <section class="products" id="products">
+  <!-- Featured Products Teaser -->
+  <section>
     <div class="container">
       <div class="section-header">
-        <div class="eyebrow">
-          <svg class="icon" style="width:16px;height:16px" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-          Our Collection
-        </div>
-        <h2>Pure Plant-Based Solutions</h2>
-        <p>Premium-grade Henna and Indigo for effective gray coverage and healthier hair.</p>
+        <div class="eyebrow">Our Collection</div>
+        <h2>Handcrafted Hair Care</h2>
+        <p>Simple, effective products designed to nourish, protect, and restore your hair.</p>
       </div>
-      <div class="products-grid">
-        <div class="product-card">
-          <div class="product-image">
-            <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&q=80" alt="Pure Henna Powder">
+      <div class="featured-grid">
+        <a href="products.html" class="featured-card">
+          <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=500&q=80" alt="Herbal Growth Oil">
+          <div class="info">
+            <h3>Herbal Growth Oil</h3>
+            <p>From GHc50 · Nourish & strengthen</p>
           </div>
-          <div class="product-info">
-            <h3>Pure Henna Powder</h3>
-            <p>Creates a rich reddish-brown base, strengthens hair, and prepares it for deep colour with Indigo.</p>
-            <div class="product-price">GHS —</div>
+        </a>
+        <a href="products.html" class="featured-card">
+          <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=500&q=80" alt="Hair Growth Butter">
+          <div class="info">
+            <h3>Hair Growth Butter</h3>
+            <p>From GHc40 · Seal moisture</p>
           </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=600&q=80" alt="Indigo Powder">
+        </a>
+        <a href="products.html" class="featured-card">
+          <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=500&q=80" alt="Henna & Indigo Kit">
+          <div class="info">
+            <h3>Henna & Indigo Kit</h3>
+            <p>GHc120 · Natural gray coverage</p>
           </div>
-          <div class="product-info">
-            <h3>Indigo Powder</h3>
-            <p>The key to deep black and dark brown tones. Use after Henna for full, natural gray coverage.</p>
-            <div class="product-price">GHS —</div>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=600&q=80" alt="Complete Gray Coverage Kit">
-          </div>
-          <div class="product-info">
-            <h3>Gray Coverage Kit</h3>
-            <p>Everything you need: Henna + Indigo + clear application guide. Perfect for first-time users.</p>
-            <div class="product-price">GHS —</div>
-          </div>
-        </div>
+        </a>
+      </div>
+      <div style="text-align:center;margin-top:2.5rem;">
+        <a href="products.html" class="btn btn-primary">View All Products</a>
       </div>
     </div>
   </section>
 
-  <!-- Benefits -->
-  <section class="benefits" id="benefits">
+  <!-- Why Kimori -->
+  <section class="benefits-strip">
     <div class="container">
       <div class="section-header">
         <div class="eyebrow">
           <svg class="icon" style="width:16px;height:16px;color:var(--gold)" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          Why Kimori Beauty
+          Why Choose Us
         </div>
-        <h2>Benefits Beyond Colour</h2>
-        <p>Henna and Indigo do more than cover gray — they transform the health of your hair.</p>
+        <h2>Simple. Effective. Natural.</h2>
+        <p>Everything we make is designed to support healthier-looking hair.</p>
       </div>
       <div class="benefits-grid">
         <div class="benefit-card">
           <div class="benefit-icon">
             <svg class="icon icon-xl" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
           </div>
-          <h3>100% Natural</h3>
-          <p>Only plant powders. No chemicals, no artificial colours, no harsh additives.</p>
+          <h3>Quality Ingredients</h3>
+          <p>Carefully selected and handcrafted for real results.</p>
         </div>
         <div class="benefit-card">
           <div class="benefit-icon">
-            <svg class="icon icon-xl" viewBox="0 0 24 24"><path d="M6.5 6.5h11l1.5 14H5l1.5-14z"/><path d="M8 6.5V5a4 4 0 0 1 8 0v1.5"/><line x1="12" y1="11" x2="12" y2="17"/><line x1="9" y1="14" x2="15" y2="14"/></svg>
+            <svg class="icon icon-xl" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
-          <h3>Strengthens Hair</h3>
-          <p>Henna coats and fortifies each strand, reducing breakage and adding body.</p>
-        </div>
-        <div class="benefit-card">
-          <div class="benefit-icon">
-            <svg class="icon icon-xl" viewBox="0 0 24 24"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/><circle cx="12" cy="12" r="4"/></svg>
-          </div>
-          <h3>Natural Shine</h3>
-          <p>Leaves hair soft, lustrous and full of life — never dull or dry.</p>
+          <h3>Natural Approach</h3>
+          <p>Plant-based solutions that respect your hair and scalp.</p>
         </div>
         <div class="benefit-card">
           <div class="benefit-icon">
             <svg class="icon icon-xl" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
           </div>
-          <h3>Lasting Colour</h3>
-          <p>Deep, rich tones that fade gracefully instead of turning brassy.</p>
+          <h3>Consistent Care</h3>
+          <p>Products designed for every stage of your hair journey.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg class="icon icon-xl" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Made in Ghana</h3>
+          <p>Proudly created for Ghanaian hair and lifestyles.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- How It Works -->
-  <section class="process" id="process">
+  <!-- CTA -->
+  <section style="background:var(--cream);text-align:center;">
     <div class="container">
-      <div class="section-header">
-        <div class="eyebrow">
-          <svg class="icon" style="width:16px;height:16px" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
-          Simple Process
-        </div>
-        <h2>How to Restore Your Dark Hair</h2>
-        <p>Two steps. Pure ingredients. Beautiful results.</p>
-      </div>
-      <div class="process-steps">
-        <div class="step">
-          <div class="step-icon">
-            <svg class="icon icon-lg" viewBox="0 0 24 24"><path d="M12 2C8 6 4 9 4 14a8 8 0 0 0 16 0c0-5-4-8-8-12z"/><path d="M12 22v-6"/></svg>
-            <span class="step-number">1</span>
-          </div>
-          <h3>Apply Henna</h3>
-          <p>Mix pure Henna with warm water into a smooth paste. Apply from roots to ends and leave for 2–4 hours. This creates the perfect base and conditions the hair.</p>
-        </div>
-        <div class="step">
-          <div class="step-icon">
-            <svg class="icon icon-lg" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            <span class="step-number">2</span>
-          </div>
-          <h3>Follow with Indigo</h3>
-          <p>After rinsing the Henna, apply freshly mixed Indigo. Leave for 1–2 hours. The Indigo reacts with the Henna to create deep brown to black tones.</p>
-        </div>
-        <div class="step">
-          <div class="step-icon">
-            <svg class="icon icon-lg" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            <span class="step-number">3</span>
-          </div>
-          <h3>Reveal & Enjoy</h3>
-          <p>Rinse thoroughly. Your gray is covered, your hair feels stronger, and the colour continues to deepen over the next 24–48 hours.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section class="testimonials">
-    <div class="container">
-      <div class="section-header">
-        <div class="eyebrow">
-          <svg class="icon" style="width:16px;height:16px" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          Real Results
-        </div>
-        <h2>What Our Customers Say</h2>
-      </div>
-      <div class="testimonial-grid">
-        <div class="testimonial-card">
-          <div class="stars">
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          </div>
-          <p>“I had almost full gray. After using Kimori Beauty’s kit, my hair is a rich dark brown again and feels so much healthier. No more chemical smell!”</p>
-          <div class="testimonial-author">Ama K.<span>Tema</span></div>
-        </div>
-        <div class="testimonial-card">
-          <div class="stars">
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          </div>
-          <p>“Finally a natural option that actually covers my grays properly. The shine is incredible and my scalp no longer itches.”</p>
-          <div class="testimonial-author">Efua M.<span>Accra</span></div>
-        </div>
-        <div class="testimonial-card">
-          <div class="stars">
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          </div>
-          <p>“I’ve tried many natural dyes. Kimori Beauty’s Henna + Indigo is by far the best quality I’ve found. Highly recommend!”</p>
-          <div class="testimonial-author">Nana A.<span>Kumasi</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <h2>Ready to Restore Your Natural Colour?</h2>
-      <p>Order pure Henna and Indigo products or message us on TikTok / WhatsApp. We’re here to help you achieve beautiful, chemical-free results.</p>
-      
-      <div class="contact-btns">
-        <a href="https://www.tiktok.com/@kimori.beauty" class="btn btn-primary" target="_blank">
-          <svg class="icon" style="width:18px;height:18px" viewBox="0 0 24 24"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
-          Follow on TikTok
-        </a>
-        <a href="https://wa.me/233XXXXXXXXX" class="btn btn-secondary">
-          <svg class="icon" style="width:18px;height:18px" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-          Order via WhatsApp
-        </a>
-      </div>
-
-      <div class="contact-info">
-        <div class="contact-item">
-          <div class="icon-wrap">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          </div>
-          <strong>Location</strong>
-          <span>Tema, Greater Accra, Ghana</span>
-        </div>
-        <div class="contact-item">
-          <div class="icon-wrap">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
-          </div>
-          <strong>TikTok</strong>
-          <span>@kimori.beauty</span>
-        </div>
-        <div class="contact-item">
-          <div class="icon-wrap">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          </div>
-          <strong>Email / WhatsApp</strong>
-          <span>Update with your details</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="footer-logo">Kimori <span>Beauty</span></div>
-    <p>Natural gray hair restoration with pure Henna & Indigo</p>
-    <div class="footer-links">
-      <a href="#about">About</a>
-      <a href="#products">Products</a>
-      <a href="#benefits">Benefits</a>
-      <a href="#process">How It Works</a>
-      <a href="#contact">Contact</a>
-      <a href="https://www.tiktok.com/@kimori.beauty" target="_blank">
-        <svg class="icon" style="width:14px;height:14px" viewBox="0 0 24 24"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
-        TikTok
+      <h2 style="font-size:2.4rem;color:var(--deep-brown);margin-bottom:1rem;">Ready to start your healthy hair journey?</h2>
+      <p style="color:var(--soft-brown);margin-bottom:2rem;max-width:500px;margin-left:auto;margin-right:auto;">Order via WhatsApp and get nationwide delivery across Ghana.</p>
+      <a href="https://wa.me/233355253706" class="btn btn-primary" target="_blank">
+        <svg class="icon" style="width:18px;height:18px" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        Message Us on WhatsApp
       </a>
     </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo">Kimori <span>Beauty</span></div>
+    <p class="footer-tagline">Grow it. Show it. Own it.</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://www.tiktok.com/@kimori.beauty" target="_blank">TikTok</a>
+    </div>
     <div class="footer-bottom">
-      © 2026 Kimori Beauty. All rights reserved. | Tema, Ghana
+      © 2026 Kimori Beauty. All rights reserved. | Tema, Ghana<br>
+      WhatsApp: 0355-253-706
     </div>
   </footer>
 
   <script>
     window.addEventListener('scroll', () => {
-      const nav = document.getElementById('navbar');
-      nav.classList.toggle('scrolled', window.scrollY > 50);
-    });
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      });
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
     });
   </script>
 </body>
