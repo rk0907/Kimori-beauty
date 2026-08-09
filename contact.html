@@ -113,9 +113,36 @@
   </footer>
 
   <script>
-    window.addEventListener('scroll', () => {
-      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
-    });
-  </script>
+  // Navbar scroll effect
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  // Dropdown
+  const dropdown = document.getElementById('pagesDropdown');
+  const dropdownBtn = dropdown.querySelector('.dropdown-toggle');
+
+  dropdownBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    dropdown.classList.toggle('open');
+    dropdownBtn.setAttribute('aria-expanded', dropdown.classList.contains('open'));
+  });
+
+  // Close when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!dropdown.contains(e.target)) {
+      dropdown.classList.remove('open');
+      dropdownBtn.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  // Mobile menu
+  const mobileToggle = document.getElementById('mobileToggle');
+  const navLinks = document.getElementById('navLinks');
+
+  mobileToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('mobile-open');
+  });
+</script>
 </body>
 </html>
