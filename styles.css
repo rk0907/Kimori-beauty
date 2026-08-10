@@ -787,6 +787,15 @@ footer {
   font-size: 0.8rem;
 }
 
+.footer-bottom a {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: var(--gold) !important;
+}
+
 /* Responsive */
 @media (max-width: 900px) {
   .hero-content,
