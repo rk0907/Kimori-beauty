@@ -668,7 +668,7 @@ section { padding: 5.5rem 2rem; }
 .whatsapp-box .phone {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.8rem;
-  color: var(--gold);
+  color: white;
   margin-bottom: 1.3rem;
   display: block;
 }
