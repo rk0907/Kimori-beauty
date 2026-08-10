@@ -13,23 +13,28 @@
 <body>
 
   <nav id="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="logo">
-        <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C8 6 4 9 4 14a8 8 0 0 0 16 0c0-5-4-8-8-12z"/><path d="M12 22v-6"/></svg>
-        Kimori <span>Beauty</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contact.html" class="nav-cta">Order Now</a></li>
-      </ul>
-      <button class="mobile-toggle" aria-label="Menu">
-        <svg class="icon" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-      </button>
-    </div>
-  </nav>
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#a66a4e" stroke-width="1.5"><path d="M12 2C8 6 4 9 4 14a8 8 0 0 0 16 0c0-5-4-8-8-12z"/><path d="M12 22v-6"/></svg>
+      Kimori <span>Beauty</span>
+    </a>
+
+    <button type="button" class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="nav-cta">Order Now</a></li>
+    </ul>
+  </div>
+</nav>
 
   <section class="page-hero">
     <div class="eyebrow">Our Story</div>
@@ -80,9 +85,21 @@
   </footer>
 
   <script>
-    window.addEventListener('scroll', () => {
-      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+  const mobileToggle = document.getElementById('mobileToggle');
+  const navLinks = document.getElementById('navLinks');
+
+  if (mobileToggle && navLinks) {
+    mobileToggle.addEventListener('click', function () {
+      navLinks.classList.toggle('show');
     });
-  </script>
+  }
+
+  // Close menu when a link is tapped
+  navLinks.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      navLinks.classList.remove('show');
+    });
+  });
+</script>
 </body>
 </html>
