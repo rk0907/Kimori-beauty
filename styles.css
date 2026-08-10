@@ -879,3 +879,13 @@ footer {
   .nav-links { display: none; }
   .mobile-toggle { display: block; }
 }
+.phone,
+.phone:link,
+.phone:visited,
+.whatsapp-box a.phone {
+  color: #c9a86c !important;
+  -webkit-text-fill-color: #c9a86c !important;
+  text-decoration: none !important;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem;
+}
